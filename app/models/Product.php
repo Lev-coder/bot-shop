@@ -30,23 +30,10 @@ class Product
      */
     private $price = 0;
 
-    /**
-     * Many Users have Many Groups.
-     * @ManyToMany(targetEntity="Category")
-     * @JoinTable(name="users_groups",
-     *      joinColumns={@JoinColumn(name="product_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@JoinColumn(name="category_id", referencedColumnName="id")}
-     *      )
-     */
-    private $categories;
+//    /**
+//     * @ORM\ManyToMany(targetEntity="Category")
+//     * @ORM\JoinTable(name="category_product")
+//     */
+//    private $categories;
 
-    /**
-     * Many Users have Many Groups.
-         * @ManyToMany(targetEntity="User")
-     * @JoinTable(name="baskets",
-     *      joinColumns={@JoinColumn(name="product_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@JoinColumn(name="user_id", referencedColumnName="id")}
-     *      )
-     */
-    private $products;
 }

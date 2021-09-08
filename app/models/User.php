@@ -26,19 +26,13 @@ class User
     private $name;
 
     /**
-     * Many features have one product. This is the owning side.
-     * @ManyToOne(targetEntity="Role", inversedBy="id")
-     * @JoinColumn(name="user_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Role")
      */
     private $role;
 
     /**
-     * Many Users have Many Groups.
-     * @ManyToMany(targetEntity="Product")
-     * @JoinTable(name="baskets",
-     *      joinColumns={@JoinColumn(name="user_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@JoinColumn(name="product_id", referencedColumnName="id")}
-     *      )
+     * @ORM\ManyToMany(targetEntity="Product")
+     * @ORM\JoinTable(name="baskets")
      */
     private $products;
 }

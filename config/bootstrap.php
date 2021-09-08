@@ -23,9 +23,8 @@ $connection = array(
     "user" => "root",
     "password" => "",
     "host" => "localhost",
-    'driver' => 'pdo_sqlite',
-    'path' => __DIR__ . '/db.sqlite',
+    'driver' => 'pdo_mysql',
 );
 
 // obtaining the entity manager
-$entityManager = EntityManager::create($conn, $config);
+$entityManager = EntityManager::create($connection, $config);

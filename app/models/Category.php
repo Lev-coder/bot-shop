@@ -21,12 +21,8 @@ class Category
     private $name;
 
     /**
-     * Many Users have Many Groups.
-     * @ManyToMany(targetEntity="Product")
-     * @JoinTable(name="users_groups",
-     *      joinColumns={@JoinColumn(name="category_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@JoinColumn(name="product_id", referencedColumnName="id")}
-     *      )
+     * @ORM\ManyToMany(targetEntity="Product")
+     * @ORM\JoinTable(name="category_product")
      */
     private $products;
 }

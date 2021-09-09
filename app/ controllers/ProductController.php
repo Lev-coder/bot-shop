@@ -1,6 +1,10 @@
 <?php
 
-class ProductController
+namespace Controllers;
+
+use Controllers\InterfaceController;
+
+class ProductController implements InterfaceController
 {
 
 }

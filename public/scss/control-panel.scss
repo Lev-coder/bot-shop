@@ -1,0 +1,106 @@
+.button {
+    border: solid;
+    padding: 15px 30px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.navigation {
+    height: 50px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+
+    &__item {}
+}
+
+.content {
+    display: flex;
+}
+
+.menu {
+    // background-color: red;
+    // border: solid;
+    width: 300px;
+    padding-left: 30px;
+
+    text-transform: uppercase;
+
+    &__title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+
+    &__item {
+        border: solid;
+        width: 150px;
+        margin-top: 15px;
+    }
+}
+
+.main {
+    // border: solid;
+    margin-top: 80px;
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.table {
+    border: solid;
+    width: 750px;
+    font-size: 18px;
+    text-align: center;
+
+    &__head {
+        text-transform: uppercase;
+    }
+
+    &__body {}
+
+    &__row {
+        height: 50px;
+    }
+
+    &__item {
+        border: solid;
+    }
+}
+
+.commands
+{
+    display: flex;
+    justify-content: space-around;
+
+    &__item{
+
+        &-icon
+        {
+            width: 40px;
+        }
+    }
+}
+
+
+.pagination {
+    display: flex;
+    font-size: 18px;
+    &__item {
+        margin: 50px 20px 0px;
+        cursor: pointer;
+        
+        &-left {
+        }
+
+        &-right {}
+    }
+}
